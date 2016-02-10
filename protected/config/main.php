@@ -7,7 +7,19 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'My Web Application',
+	'name'=>Yii::t('app', 'My Web Application'),
+
+	// set target language to be Spanish Colombian
+	'language' => 'es-CO',
+
+	// set source language to be English
+	'sourceLanguage' => 'en-US',
+
+	// set time zone to be America/Bogota
+	'timezone' => 'America/Bogota',
+
+	// set charset to be UTF-8
+	'charset'=>'utf-8',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
